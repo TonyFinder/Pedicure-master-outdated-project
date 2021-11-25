@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Pedicure_Goods/static/css/main.43ca3018.chunk.css",
-    "main.js": "/Pedicure_Goods/static/js/main.d6b5a1a7.chunk.js",
-    "main.js.map": "/Pedicure_Goods/static/js/main.d6b5a1a7.chunk.js.map",
-    "runtime-main.js": "/Pedicure_Goods/static/js/runtime-main.3860696f.js",
-    "runtime-main.js.map": "/Pedicure_Goods/static/js/runtime-main.3860696f.js.map",
-    "static/js/2.e11fc798.chunk.js": "/Pedicure_Goods/static/js/2.e11fc798.chunk.js",
-    "static/js/2.e11fc798.chunk.js.map": "/Pedicure_Goods/static/js/2.e11fc798.chunk.js.map",
-    "static/js/3.72fe968b.chunk.js": "/Pedicure_Goods/static/js/3.72fe968b.chunk.js",
-    "static/js/3.72fe968b.chunk.js.map": "/Pedicure_Goods/static/js/3.72fe968b.chunk.js.map",
+    "main.css": "/Pedicure_Goods/static/css/main.a66f1560.chunk.css",
+    "main.js": "/Pedicure_Goods/static/js/main.0d84dd1b.chunk.js",
+    "main.js.map": "/Pedicure_Goods/static/js/main.0d84dd1b.chunk.js.map",
+    "runtime-main.js": "/Pedicure_Goods/static/js/runtime-main.f709b406.js",
+    "runtime-main.js.map": "/Pedicure_Goods/static/js/runtime-main.f709b406.js.map",
+    "static/js/2.68accb65.chunk.js": "/Pedicure_Goods/static/js/2.68accb65.chunk.js",
+    "static/js/2.68accb65.chunk.js.map": "/Pedicure_Goods/static/js/2.68accb65.chunk.js.map",
+    "static/js/3.8f496520.chunk.js": "/Pedicure_Goods/static/js/3.8f496520.chunk.js",
+    "static/js/3.8f496520.chunk.js.map": "/Pedicure_Goods/static/js/3.8f496520.chunk.js.map",
     "index.html": "/Pedicure_Goods/index.html",
-    "static/css/main.43ca3018.chunk.css.map": "/Pedicure_Goods/static/css/main.43ca3018.chunk.css.map",
-    "static/js/2.e11fc798.chunk.js.LICENSE.txt": "/Pedicure_Goods/static/js/2.e11fc798.chunk.js.LICENSE.txt"
+    "static/css/main.a66f1560.chunk.css.map": "/Pedicure_Goods/static/css/main.a66f1560.chunk.css.map",
+    "static/js/2.68accb65.chunk.js.LICENSE.txt": "/Pedicure_Goods/static/js/2.68accb65.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3860696f.js",
-    "static/js/2.e11fc798.chunk.js",
-    "static/css/main.43ca3018.chunk.css",
-    "static/js/main.d6b5a1a7.chunk.js"
+    "static/js/runtime-main.f709b406.js",
+    "static/js/2.68accb65.chunk.js",
+    "static/css/main.a66f1560.chunk.css",
+    "static/js/main.0d84dd1b.chunk.js"
   ]
 }
