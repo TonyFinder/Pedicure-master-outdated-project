@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Pedicure_Goods/static/css/main.a66f1560.chunk.css",
-    "main.js": "/Pedicure_Goods/static/js/main.7fd0a051.chunk.js",
-    "main.js.map": "/Pedicure_Goods/static/js/main.7fd0a051.chunk.js.map",
+    "main.js": "/Pedicure_Goods/static/js/main.831a2879.chunk.js",
+    "main.js.map": "/Pedicure_Goods/static/js/main.831a2879.chunk.js.map",
     "runtime-main.js": "/Pedicure_Goods/static/js/runtime-main.ba698672.js",
     "runtime-main.js.map": "/Pedicure_Goods/static/js/runtime-main.ba698672.js.map",
     "static/js/2.b2907dc3.chunk.js": "/Pedicure_Goods/static/js/2.b2907dc3.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ba698672.js",
     "static/js/2.b2907dc3.chunk.js",
     "static/css/main.a66f1560.chunk.css",
-    "static/js/main.7fd0a051.chunk.js"
+    "static/js/main.831a2879.chunk.js"
   ]
 }
