@@ -65,6 +65,9 @@ export const Categories = (props: CategoriesPropsType) => {
                                     Pedicure.cabinet</Typography>
                                 <FavoriteTwoTone/>
                             </Grid>
+                            <Grid container justifyContent={'center'}>
+                                <a href={"https://wa.me/79510215025"}><img src={"https://live.staticflickr.com/65535/51708193253_5cd29eecb5_m.jpg"} alt={"WhatsApp"} style={{width: "100px"}}/></a>
+                            </Grid>
                         </Grid>
                     </Container>
                 )
