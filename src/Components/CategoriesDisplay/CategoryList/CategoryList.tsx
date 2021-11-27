@@ -7,28 +7,88 @@ export type CategoryListPropsType = {
     store: StoreType
     category: string
 }
+export type CollapsedType = {
+    [key: string]: ValueType[]
+}
+export type ValueType = {
+    id: number
+    value: boolean
+}
 
 export const CategoryList = (props: CategoryListPropsType) => {
     const specialProductsItems = props.store.items.filter(f => f.category === props.category)
-    const [ingredients, setIngredients] = useState<boolean>(false)
-    const [apply, setApply] = useState<boolean>(false)
+    const [ingredients, setIngredients] = useState<CollapsedType>({
+            ['372']: [{id: 372, value: false}],
+            ['306']: [{id: 306, value: false}],
+            ['832']: [{id: 832, value: false}],
+            ['1111']: [{id: 1111, value: false}],
+            ['991312']: [{id: 991312, value: false}],
+            ['1302']: [{id: 1302, value: false}],
+            ['889']: [{id: 889, value: false}],
+            ['367']: [{id: 367, value: false}],
+            ['888']: [{id: 888, value: false}],
+            ['370']: [{id: 370, value: false}],
+            ['369']: [{id: 369, value: false}],
+            ['991039']: [{id: 991039, value: false}]
+        }
+    )
 
-    const onClickIngredients = () => {
-        if (ingredients) {
-            setIngredients(false)
-            setApply(false)
+    const [apply, setApply] = useState<CollapsedType>({
+            ['372']: [{id: 372, value: false}],
+            ['306']: [{id: 306, value: false}],
+            ['832']: [{id: 832, value: false}],
+            ['1111']: [{id: 1111, value: false}],
+            ['991312']: [{id: 991312, value: false}],
+            ['1302']: [{id: 1302, value: false}],
+            ['889']: [{id: 889, value: false}],
+            ['367']: [{id: 367, value: false}],
+            ['888']: [{id: 888, value: false}],
+            ['370']: [{id: 370, value: false}],
+            ['369']: [{id: 369, value: false}],
+            ['991039']: [{id: 991039, value: false}]
+        }
+    )
+
+    const onClickIngredients = (key: number) => {
+        if (ingredients[key.toString()][0].value) {
+            setIngredients({
+                ...ingredients,
+                [key.toString()]: ingredients[key.toString()].map(m => ({...m, value: false}))
+            })
+            setApply({
+                ...apply,
+                [key.toString()]: apply[key.toString()].map(m => ({...m, value: false}))
+            })
         } else {
-            setIngredients(true)
-            setApply(false)
+            setIngredients({
+                ...ingredients,
+                [key.toString()]: ingredients[key.toString()].map(m => ({...m, value: true}))
+            })
+            setApply({
+                ...apply,
+                [key.toString()]: apply[key.toString()].map(m => ({...m, value: false}))
+            })
         }
     }
-    const onClickApply = () => {
-        if (apply) {
-            setApply(false)
-            setIngredients(false)
+    const onClickApply = (key: number) => {
+        if (apply[key.toString()][0].value) {
+            setApply({
+                ...apply,
+                [key.toString()]: apply[key.toString()].map(m => ({...m, value: false}))
+            })
+            setIngredients({
+                ...ingredients,
+                [key.toString()]: ingredients[key.toString()].map(m => ({...m, value: false}))
+            })
         } else {
-            setApply(true)
-            setIngredients(false)
+            setApply({
+                ...apply,
+                [key.toString()]: apply[key.toString()].map(m => ({...m, value: true}))
+            })
+            setIngredients({
+                ...ingredients,
+                [key.toString()]: ingredients[key.toString()].map(m => ({...m, value: false}))
+            })
         }
     }
 
@@ -65,19 +125,22 @@ export const CategoryList = (props: CategoryListPropsType) => {
                                 <Grid container justifyContent={'center'}>
                                     <Button variant={'outlined'} color={'primary'}
                                             style={{margin: '2px'}}
-                                            onClick={onClickIngredients}>Ингридиенты</Button>
+                                            onClick={() => onClickIngredients(m.id)}>Ингридиенты</Button>
                                     <Button variant={'outlined'} color={'primary'}
                                             style={{margin: '2px'}}
-                                            onClick={onClickApply}>Способ применения</Button>
+                                            onClick={() => onClickApply(m.id)}>Способ применения</Button>
                                 </Grid>
-                                {ingredients && <Grid item>
+                                {ingredients[m.id][0].value && <Grid item>
                                     <ul>
                                         {props.store.description.find(f => f.id === m.id)?.ingredients.map(m2 => <li
                                             key={v1()}>{m2}</li>)}
                                     </ul>
                                 </Grid>}
-                                {apply && <Grid item>
-                                    <div style={{textAlign: 'center', paddingTop: '15px'}}>{props.store.description.find(f => f.id === m.id)?.apply}</div>
+                                {apply[m.id][0].value && <Grid item>
+                                    <div style={{
+                                        textAlign: 'center',
+                                        paddingTop: '15px'
+                                    }}>{props.store.description.find(f => f.id === m.id)?.apply}</div>
                                 </Grid>}
                             </Grid>
                         </Paper>
