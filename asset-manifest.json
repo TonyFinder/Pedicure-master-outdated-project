@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/Pedicure_Goods/static/css/main.88c2bd93.chunk.css",
-    "main.js": "/Pedicure_Goods/static/js/main.8076c815.chunk.js",
-    "main.js.map": "/Pedicure_Goods/static/js/main.8076c815.chunk.js.map",
+    "main.css": "/Pedicure_Goods/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/Pedicure_Goods/static/js/main.966dc3fa.chunk.js",
+    "main.js.map": "/Pedicure_Goods/static/js/main.966dc3fa.chunk.js.map",
     "runtime-main.js": "/Pedicure_Goods/static/js/runtime-main.1fe677b7.js",
     "runtime-main.js.map": "/Pedicure_Goods/static/js/runtime-main.1fe677b7.js.map",
-    "static/js/2.bc01c5d2.chunk.js": "/Pedicure_Goods/static/js/2.bc01c5d2.chunk.js",
-    "static/js/2.bc01c5d2.chunk.js.map": "/Pedicure_Goods/static/js/2.bc01c5d2.chunk.js.map",
+    "static/js/2.7a1e8506.chunk.js": "/Pedicure_Goods/static/js/2.7a1e8506.chunk.js",
+    "static/js/2.7a1e8506.chunk.js.map": "/Pedicure_Goods/static/js/2.7a1e8506.chunk.js.map",
     "static/js/3.50a125bf.chunk.js": "/Pedicure_Goods/static/js/3.50a125bf.chunk.js",
     "static/js/3.50a125bf.chunk.js.map": "/Pedicure_Goods/static/js/3.50a125bf.chunk.js.map",
     "index.html": "/Pedicure_Goods/index.html",
-    "static/css/main.88c2bd93.chunk.css.map": "/Pedicure_Goods/static/css/main.88c2bd93.chunk.css.map",
-    "static/js/2.bc01c5d2.chunk.js.LICENSE.txt": "/Pedicure_Goods/static/js/2.bc01c5d2.chunk.js.LICENSE.txt",
-    "static/media/Categories.module.css": "/Pedicure_Goods/static/media/Background.c98f45c3.jpg"
+    "static/css/main.6dea0f05.chunk.css.map": "/Pedicure_Goods/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.7a1e8506.chunk.js.LICENSE.txt": "/Pedicure_Goods/static/js/2.7a1e8506.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1fe677b7.js",
-    "static/js/2.bc01c5d2.chunk.js",
-    "static/css/main.88c2bd93.chunk.css",
-    "static/js/main.8076c815.chunk.js"
+    "static/js/2.7a1e8506.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.966dc3fa.chunk.js"
   ]
 }
