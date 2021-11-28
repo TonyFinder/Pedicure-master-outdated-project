@@ -23,13 +23,11 @@ export const CategoryList = (props: CategoryListPropsType) => {
             ['832']: [{id: 832, value: false}],
             ['1111']: [{id: 1111, value: false}],
             ['991312']: [{id: 991312, value: false}],
-            ['1302']: [{id: 1302, value: false}],
             ['889']: [{id: 889, value: false}],
             ['367']: [{id: 367, value: false}],
             ['888']: [{id: 888, value: false}],
-            ['370']: [{id: 370, value: false}],
             ['369']: [{id: 369, value: false}],
-            ['991039']: [{id: 991039, value: false}]
+            ['991039']: [{id: 991039, value: false}],
         }
     )
 
@@ -39,13 +37,11 @@ export const CategoryList = (props: CategoryListPropsType) => {
             ['832']: [{id: 832, value: false}],
             ['1111']: [{id: 1111, value: false}],
             ['991312']: [{id: 991312, value: false}],
-            ['1302']: [{id: 1302, value: false}],
             ['889']: [{id: 889, value: false}],
             ['367']: [{id: 367, value: false}],
             ['888']: [{id: 888, value: false}],
-            ['370']: [{id: 370, value: false}],
             ['369']: [{id: 369, value: false}],
-            ['991039']: [{id: 991039, value: false}]
+            ['991039']: [{id: 991039, value: false}],
         }
     )
 

@@ -105,103 +105,87 @@ export const store: StoreType = {
     }],
     items: [{
         id: 372,
-        category: 'Сухая кожа стопы',
+        category: 'Сухая кожа',
         name: 'Крем. Питание и Восстановление',
         volume: 50,
-        priceRegular: 900,
-        priceDiscounted: 700,
-        discount: '22%'
+        priceRegular: 950,
+        priceDiscounted: 800,
+        discount: '15%'
     }, {
         id: 306,
-        category: 'Сухая кожа стопы',
+        category: 'Сухая кожа',
         name: 'Крем. Питание и Восстановление',
         volume: 150,
-        priceRegular: 2050,
-        priceDiscounted: 1650,
-        discount: '19%'
+        priceRegular: 2150,
+        priceDiscounted: 1800,
+        discount: '16%'
     }, {
         id: 832,
-        category: 'Сухая кожа стопы',
+        category: 'Сухая кожа',
         name: 'Бальзам. Гидро-защита',
         volume: 125,
-        priceRegular: 1000,
-        priceDiscounted: 800,
-        discount: '20%'
+        priceRegular: 1050,
+        priceDiscounted: 900,
+        discount: '14%'
     }, {
         id: 1111,
-        category: 'Сухая кожа стопы',
+        category: 'Сухая кожа',
         name: 'Бальзам. Идеальная гладкость',
         volume: 75,
-        priceRegular: 1000,
-        priceDiscounted: 800,
-        discount: '20%'
+        priceRegular: 1050,
+        priceDiscounted: 900,
+        discount: '14%'
     }, {
         id: 991312,
-        category: 'Сухая кожа стопы',
+        category: 'Сухая кожа',
         name: 'Бальзам. Идеальная гладкость',
         volume: 150,
-        priceRegular: 2050,
-        priceDiscounted: 1650,
-        discount: '19%'
-    }, {
-        id: 1302,
-        category: 'Сухая кожа стопы',
-        name: 'Ночная маска для ног.',
-        volume: 100,
-        priceRegular: 1400,
-        priceDiscounted: 1100,
-        discount: '21%'
+        priceRegular: 2150,
+        priceDiscounted: 1800,
+        discount: '16%'
     }, {
         id: 889,
         category: 'Избыточное потоотдение и неприятный запах',
         name: 'Гель. Антиперспирант',
         volume: 75,
-        priceRegular: 1100,
-        priceDiscounted: 900,
-        discount: '18%'
+        priceRegular: 1150,
+        priceDiscounted: 950,
+        discount: '17%'
     }, {
         id: 367,
         category: 'Избыточное потоотдение и неприятный запах',
         name: 'Крем. Антиперспирант',
         volume: 50,
-        priceRegular: 1100,
-        priceDiscounted: 900,
-        discount: '18%'
+        priceRegular: 1150,
+        priceDiscounted: 950,
+        discount: '17%'
     }, {
         id: 888,
         category: 'Избыточное потоотдение и неприятный запах',
         name: 'Спрей. Антиперспирант',
         volume: 100,
-        priceRegular: 1500,
-        priceDiscounted: 1200,
-        discount: '20%'
-    }, {
-        id: 370,
-        category: 'Избыточное потоотдение и неприятный запах',
-        name: 'Спрей-пудра.',
-        volume: 150,
-        priceRegular: 1850,
-        priceDiscounted: 1500,
-        discount: '18%'
+        priceRegular: 1600,
+        priceDiscounted: 1350,
+        discount: '15%'
     }, {
         id: 369,
         category: 'Избыточное потоотдение и неприятный запах',
-        name: 'Спрей для обуви.',
+        name: 'Спрей для обуви',
         volume: 150,
-        priceRegular: 1850,
-        priceDiscounted: 1500,
-        discount: '18%'
+        priceRegular: 1950,
+        priceDiscounted: 1600,
+        discount: '17%'
     }, {
         id: 991039,
         category: 'Специальные продукты',
-        name: 'Бальзам от трещин.',
+        name: 'Бальзам от трещин',
         volume: 75,
-        priceRegular: 1150,
-        priceDiscounted: 900,
-        discount: '21%'
+        priceRegular: 1200,
+        priceDiscounted: 1000,
+        discount: '16%'
     },],
     categories: [
-        {id: 1, category: 'Сухая кожа стопы'},
+        {id: 1, category: 'Сухая кожа'},
         {id: 2, category: 'Избыточное потоотдение и неприятный запах'},
         {id: 3, category: 'Специальные продукты'}
     ]
