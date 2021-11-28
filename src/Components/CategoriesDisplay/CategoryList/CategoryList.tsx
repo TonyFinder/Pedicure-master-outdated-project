@@ -28,6 +28,9 @@ export const CategoryList = (props: CategoryListPropsType) => {
             ['888']: [{id: 888, value: false}],
             ['369']: [{id: 369, value: false}],
             ['991039']: [{id: 991039, value: false}],
+            ['111']: [{id: 111, value: false}],
+            ['222']: [{id: 222, value: false}],
+            ['223']: [{id: 223, value: false}],
         }
     )
 
@@ -42,6 +45,9 @@ export const CategoryList = (props: CategoryListPropsType) => {
             ['888']: [{id: 888, value: false}],
             ['369']: [{id: 369, value: false}],
             ['991039']: [{id: 991039, value: false}],
+            ['111']: [{id: 111, value: false}],
+            ['222']: [{id: 222, value: false}],
+            ['223']: [{id: 223, value: false}],
         }
     )
 
