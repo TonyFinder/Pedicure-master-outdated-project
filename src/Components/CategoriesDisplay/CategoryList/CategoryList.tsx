@@ -125,10 +125,10 @@ export const CategoryList = (props: CategoryListPropsType) => {
                                     </ul>
                                 </Grid>
                                 <Grid container justifyContent={'center'}>
-                                    <Button variant={'outlined'} color={'primary'}
+                                    <Button variant={ingredients[m.id][0].value ? 'contained' : 'outlined'} color={'primary'}
                                             style={{margin: '2px'}}
-                                            onClick={() => onClickIngredients(m.id)}>Ингридиенты</Button>
-                                    <Button variant={'outlined'} color={'primary'}
+                                            onClick={() => onClickIngredients(m.id)}>Ингредиенты</Button>
+                                    <Button variant={apply[m.id][0].value ? 'contained' : 'outlined'} color={'primary'}
                                             style={{margin: '2px'}}
                                             onClick={() => onClickApply(m.id)}>Способ применения</Button>
                                 </Grid>

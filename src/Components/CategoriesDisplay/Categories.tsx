@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {CategoriesType, DescriptionItemsType, ItemsType} from '../../Store/Store';
 import {CategoryList} from './CategoryList/CategoryList';
 import {AppBar, Button, ButtonGroup, Container, Grid, Toolbar, Typography} from '@material-ui/core';
-import {ArrowRightAlt, FavoriteTwoTone} from '@material-ui/icons';
 
 type CategoriesPropsType = {
     store: DescriptionItemsType & ItemsType & CategoriesType
@@ -25,14 +24,6 @@ export const Categories = (props: CategoriesPropsType) => {
                         <AppBar position={'sticky'}>
                             <Toolbar>
                                 <Grid container justifyContent={'center'} alignItems={'center'}>
-                                    <Grid item>
-                                        <Grid container>
-                                            <Typography align={'center'} variant="h6"
-                                                        style={{marginRight: '5px', fontFamily: 'cursive'}}>Ваш
-                                                Pedicure.cabinet</Typography>
-                                            <FavoriteTwoTone/>
-                                        </Grid>
-                                    </Grid>
                                     <Grid item>
                                         <Button color="inherit" variant={'outlined'} style={{margin: '10px'}}
                                                 onClick={props.callbackWelcome}>На главную</Button>
