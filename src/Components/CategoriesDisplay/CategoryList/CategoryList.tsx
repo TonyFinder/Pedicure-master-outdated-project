@@ -1,96 +1,37 @@
 import React, {useState} from 'react';
 import {v1} from 'uuid';
 import {StoreType} from '../../../Store/Store';
-import {Button, Grid, Paper} from '@material-ui/core';
+import {Button, ButtonGroup, Grid, Paper} from '@material-ui/core';
 
 export type CategoryListPropsType = {
     store: StoreType
     category: string
 }
-export type CollapsedType = {
-    [key: string]: ValueType[]
-}
 export type ValueType = {
     id: number
-    value: boolean
+    valueAction: boolean
+    valueIngredients: boolean
+    valueApply: boolean
 }
 
 export const CategoryList = (props: CategoryListPropsType) => {
     const specialProductsItems = props.store.items.filter(f => f.category === props.category)
-    const [ingredients, setIngredients] = useState<CollapsedType>({
-            ['372']: [{id: 372, value: false}],
-            ['306']: [{id: 306, value: false}],
-            ['832']: [{id: 832, value: false}],
-            ['1111']: [{id: 1111, value: false}],
-            ['991312']: [{id: 991312, value: false}],
-            ['889']: [{id: 889, value: false}],
-            ['367']: [{id: 367, value: false}],
-            ['888']: [{id: 888, value: false}],
-            ['369']: [{id: 369, value: false}],
-            ['991039']: [{id: 991039, value: false}],
-            ['111']: [{id: 111, value: false}],
-            ['222']: [{id: 222, value: false}],
-            ['223']: [{id: 223, value: false}],
-        }
-    )
+    const [buttonsValue, setButtonsValue] = useState<ValueType[]>([{ id: 372, valueAction: true, valueIngredients: false, valueApply: false},{ id: 306, valueAction: true, valueIngredients: false, valueApply: false},{ id: 832, valueAction: true, valueIngredients: false, valueApply: false},{ id: 1111, valueAction: true, valueIngredients: false, valueApply: false},{ id: 991312, valueAction: true, valueIngredients: false, valueApply: false},{ id: 889, valueAction: true, valueIngredients: false, valueApply: false},{ id: 367, valueAction: true, valueIngredients: false, valueApply: false},{ id: 888, valueAction: true, valueIngredients: false, valueApply: false},{ id: 369, valueAction: true, valueIngredients: false, valueApply: false},{ id: 991039, valueAction: true, valueIngredients: false, valueApply: false},{ id: 111, valueAction: true, valueIngredients: false, valueApply: false},{ id: 222, valueAction: true, valueIngredients: false, valueApply: false},{ id: 223, valueAction: true, valueIngredients: false, valueApply: false},])
 
-    const [apply, setApply] = useState<CollapsedType>({
-            ['372']: [{id: 372, value: false}],
-            ['306']: [{id: 306, value: false}],
-            ['832']: [{id: 832, value: false}],
-            ['1111']: [{id: 1111, value: false}],
-            ['991312']: [{id: 991312, value: false}],
-            ['889']: [{id: 889, value: false}],
-            ['367']: [{id: 367, value: false}],
-            ['888']: [{id: 888, value: false}],
-            ['369']: [{id: 369, value: false}],
-            ['991039']: [{id: 991039, value: false}],
-            ['111']: [{id: 111, value: false}],
-            ['222']: [{id: 222, value: false}],
-            ['223']: [{id: 223, value: false}],
-        }
-    )
-
-    const onClickIngredients = (key: number) => {
-        if (ingredients[key.toString()][0].value) {
-            setIngredients({
-                ...ingredients,
-                [key.toString()]: ingredients[key.toString()].map(m => ({...m, value: false}))
-            })
-            setApply({
-                ...apply,
-                [key.toString()]: apply[key.toString()].map(m => ({...m, value: false}))
-            })
-        } else {
-            setIngredients({
-                ...ingredients,
-                [key.toString()]: ingredients[key.toString()].map(m => ({...m, value: true}))
-            })
-            setApply({
-                ...apply,
-                [key.toString()]: apply[key.toString()].map(m => ({...m, value: false}))
-            })
-        }
-    }
-    const onClickApply = (key: number) => {
-        if (apply[key.toString()][0].value) {
-            setApply({
-                ...apply,
-                [key.toString()]: apply[key.toString()].map(m => ({...m, value: false}))
-            })
-            setIngredients({
-                ...ingredients,
-                [key.toString()]: ingredients[key.toString()].map(m => ({...m, value: false}))
-            })
-        } else {
-            setApply({
-                ...apply,
-                [key.toString()]: apply[key.toString()].map(m => ({...m, value: true}))
-            })
-            setIngredients({
-                ...ingredients,
-                [key.toString()]: ingredients[key.toString()].map(m => ({...m, value: false}))
-            })
+    const onClickChanger = (id: number, valueOfButton: 'valueAction' | 'valueIngredients' | 'valueApply') => {
+        switch (valueOfButton) {
+            case 'valueAction':
+                setButtonsValue(buttonsValue.map(m => m.id === id ? {...m, valueAction: !m.valueAction, valueIngredients: false, valueApply: false} : m))
+                break
+            case 'valueIngredients':
+                setButtonsValue(buttonsValue.map(m => m.id === id ? {...m, valueAction: false, valueIngredients: !m.valueIngredients, valueApply: false} : m))
+                break
+            case 'valueApply':
+                setButtonsValue(buttonsValue.map(m => m.id === id ? {...m, valueAction: false, valueIngredients: false, valueApply: !m.valueApply} : m))
+                break
+            default:
+                console.log('Ошибка')
+                break
         }
     }
 
@@ -99,7 +40,7 @@ export const CategoryList = (props: CategoryListPropsType) => {
             {specialProductsItems.map(m => {
                 return (
                     <Grid item key={m.id}>
-                        <Paper elevation={6} style={{padding: '15px'}}>
+                        <Paper elevation={6} style={{padding: '15px', width: "85vw"}}>
                             <Grid container alignItems={'center'} justifyContent={'center'} direction={'column'}>
                                 <Grid item style={{textAlign: 'center'}}>
                                     <h3 style={{margin: '0px'}}>
@@ -109,7 +50,7 @@ export const CategoryList = (props: CategoryListPropsType) => {
                                 </Grid>
                                 <Grid item style={{margin: '10px 0px'}}>
                                     <img src={props.store.description.find(f => f.id === m.id)?.picture}
-                                         alt={'Изображение'}/>
+                                         alt={'Изображение'} style={{height: "300px"}}/>
                                 </Grid>
                                 <Grid item>
                                     <div>Цена - <b>{m.priceRegular} руб.</b></div>
@@ -117,28 +58,30 @@ export const CategoryList = (props: CategoryListPropsType) => {
                                 </Grid>
                             </Grid>
                             <Grid container style={{paddingTop: '25px'}}>
-                                <Grid item>
-                                    <h4 style={{margin: '0px'}}>Действие:</h4>
-                                    <ul>
-                                        {props.store.description.find(f => f.id === m.id)?.action.map(m1 => <li
-                                            key={v1()}>{m1}</li>)}
-                                    </ul>
-                                </Grid>
                                 <Grid container justifyContent={'center'}>
-                                    <Button variant={ingredients[m.id][0].value ? 'contained' : 'outlined'} color={'primary'}
-                                            style={{margin: '2px'}}
-                                            onClick={() => onClickIngredients(m.id)}>Ингредиенты</Button>
-                                    <Button variant={apply[m.id][0].value ? 'contained' : 'outlined'} color={'primary'}
-                                            style={{margin: '2px'}}
-                                            onClick={() => onClickApply(m.id)}>Способ применения</Button>
+                                    <ButtonGroup size="small" color={'primary'}>
+                                        <Button variant={buttonsValue.filter(f => f.id === m.id)[0].valueAction ? 'contained' : 'outlined'}
+                                                onClick={() => onClickChanger(m.id, 'valueAction')}>Действие</Button>
+                                        <Button variant={buttonsValue.filter(f => f.id === m.id)[0].valueIngredients ? 'contained' : 'outlined'}
+                                                onClick={() => onClickChanger(m.id, 'valueIngredients')}>Ингредиенты</Button>
+                                        <Button variant={buttonsValue.filter(f => f.id === m.id)[0].valueApply ? 'contained' : 'outlined'}
+                                                onClick={() => onClickChanger(m.id, 'valueApply')}>Как
+                                            применять</Button>
+                                    </ButtonGroup>
                                 </Grid>
-                                {ingredients[m.id][0].value && <Grid item>
+                                {buttonsValue.filter(f => f.id === m.id)[0].valueAction && <Grid item>
+                                    <ul>
+                                        {props.store.description.find(f => f.id === m.id)?.action.map(m2 => <li
+                                            key={v1()}>{m2}</li>)}
+                                    </ul>
+                                </Grid>}
+                                {buttonsValue.filter(f => f.id === m.id)[0].valueIngredients && <Grid item>
                                     <ul>
                                         {props.store.description.find(f => f.id === m.id)?.ingredients.map(m2 => <li
                                             key={v1()}>{m2}</li>)}
                                     </ul>
                                 </Grid>}
-                                {apply[m.id][0].value && <Grid item>
+                                {buttonsValue.filter(f => f.id === m.id)[0].valueApply && <Grid item>
                                     <div style={{
                                         textAlign: 'center',
                                         paddingTop: '15px'
