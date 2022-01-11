@@ -126,105 +126,105 @@ export const store: StoreType = {
         category: 'Сухая кожа',
         name: 'Крем. Питание и Восстановление',
         volume: 50,
-        priceRegular: 950,
-        priceDiscounted: 800,
+        priceRegular: 1000,
+        priceDiscounted: 850,
         discount: '15%'
     }, {
         id: 306,
         category: 'Сухая кожа',
         name: 'Крем. Питание и Восстановление',
         volume: 150,
-        priceRegular: 2150,
-        priceDiscounted: 1800,
-        discount: '16%'
+        priceRegular: 2250,
+        priceDiscounted: 1850,
+        discount: '17%'
     }, {
         id: 832,
         category: 'Сухая кожа',
         name: 'Бальзам. Гидро-защита',
         volume: 125,
-        priceRegular: 1050,
-        priceDiscounted: 900,
-        discount: '14%'
+        priceRegular: 1150,
+        priceDiscounted: 950,
+        discount: '17%'
     }, {
         id: 1111,
         category: 'Сухая кожа',
         name: 'Бальзам. Идеальная гладкость',
         volume: 75,
-        priceRegular: 1050,
+        priceRegular: 1100,
         priceDiscounted: 900,
-        discount: '14%'
+        discount: '18%'
     }, {
         id: 991312,
         category: 'Сухая кожа',
         name: 'Бальзам. Идеальная гладкость',
         volume: 150,
-        priceRegular: 2150,
-        priceDiscounted: 1800,
-        discount: '16%'
+        priceRegular: 2250,
+        priceDiscounted: 1850,
+        discount: '17%'
     }, {
         id: 889,
         category: 'Избыточное потоотдение и неприятный запах',
         name: 'Гель. Антиперспирант',
         volume: 75,
-        priceRegular: 1150,
-        priceDiscounted: 950,
-        discount: '17%'
+        priceRegular: 1200,
+        priceDiscounted: 1000,
+        discount: '16%'
     }, {
         id: 367,
         category: 'Избыточное потоотдение и неприятный запах',
         name: 'Крем. Антиперспирант',
         volume: 50,
-        priceRegular: 1150,
-        priceDiscounted: 950,
-        discount: '17%'
+        priceRegular: 1200,
+        priceDiscounted: 1000,
+        discount: '16%'
     }, {
         id: 888,
         category: 'Избыточное потоотдение и неприятный запах',
         name: 'Спрей. Антиперспирант',
         volume: 100,
-        priceRegular: 1600,
-        priceDiscounted: 1350,
+        priceRegular: 1650,
+        priceDiscounted: 1400,
         discount: '15%'
     }, {
         id: 369,
         category: 'Избыточное потоотдение и неприятный запах',
         name: 'Спрей для обуви',
         volume: 150,
-        priceRegular: 1950,
-        priceDiscounted: 1600,
+        priceRegular: 2050,
+        priceDiscounted: 1700,
         discount: '17%'
     }, {
         id: 991039,
         category: 'Специальные продукты',
         name: 'Бальзам от трещин',
         volume: 75,
-        priceRegular: 1200,
-        priceDiscounted: 1000,
+        priceRegular: 1250,
+        priceDiscounted: 1050,
         discount: '16%'
     }, {
         id: 111,
         category: 'Сухая кожа',
         name: 'Крем для ног. Лечебный',
         volume: 75,
-        priceRegular: 1800,
-        priceDiscounted: 1500,
+        priceRegular: 1850,
+        priceDiscounted: 1550,
         discount: '16%'
     }, {
         id: 222,
         category: 'Сухая кожа',
         name: 'Крем для рук. Защитный',
         volume: 75,
-        priceRegular: 1400,
-        priceDiscounted: 1150,
+        priceRegular: 1450,
+        priceDiscounted: 1200,
         discount: '17%'
     }, {
         id: 223,
         category: 'Сухая кожа',
         name: 'Крем для рук. Защитный',
         volume: 150,
-        priceRegular: 2200,
-        priceDiscounted: 1850,
-        discount: '15%'
+        priceRegular: 2300,
+        priceDiscounted: 1900,
+        discount: '17%'
     },],
     categories: [
         {id: 1, category: 'Сухая кожа'},
