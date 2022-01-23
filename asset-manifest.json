@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Pedicure_Goods/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/Pedicure_Goods/static/js/main.434d9bf6.chunk.js",
-    "main.js.map": "/Pedicure_Goods/static/js/main.434d9bf6.chunk.js.map",
-    "runtime-main.js": "/Pedicure_Goods/static/js/runtime-main.ba698672.js",
-    "runtime-main.js.map": "/Pedicure_Goods/static/js/runtime-main.ba698672.js.map",
-    "static/js/2.0c05cfc6.chunk.js": "/Pedicure_Goods/static/js/2.0c05cfc6.chunk.js",
-    "static/js/2.0c05cfc6.chunk.js.map": "/Pedicure_Goods/static/js/2.0c05cfc6.chunk.js.map",
-    "static/js/3.4eebefd8.chunk.js": "/Pedicure_Goods/static/js/3.4eebefd8.chunk.js",
-    "static/js/3.4eebefd8.chunk.js.map": "/Pedicure_Goods/static/js/3.4eebefd8.chunk.js.map",
-    "index.html": "/Pedicure_Goods/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/Pedicure_Goods/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.0c05cfc6.chunk.js.LICENSE.txt": "/Pedicure_Goods/static/js/2.0c05cfc6.chunk.js.LICENSE.txt",
-    "static/media/instagram.87437c11.png": "/Pedicure_Goods/static/media/instagram.87437c11.png",
-    "static/media/whatsapp.faad3d43.jpg": "/Pedicure_Goods/static/media/whatsapp.faad3d43.jpg"
+    "main.css": "/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/static/js/main.434d9bf6.chunk.js",
+    "main.js.map": "/static/js/main.434d9bf6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.08716053.js",
+    "runtime-main.js.map": "/static/js/runtime-main.08716053.js.map",
+    "static/js/2.0c05cfc6.chunk.js": "/static/js/2.0c05cfc6.chunk.js",
+    "static/js/2.0c05cfc6.chunk.js.map": "/static/js/2.0c05cfc6.chunk.js.map",
+    "static/js/3.4eebefd8.chunk.js": "/static/js/3.4eebefd8.chunk.js",
+    "static/js/3.4eebefd8.chunk.js.map": "/static/js/3.4eebefd8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.0c05cfc6.chunk.js.LICENSE.txt": "/static/js/2.0c05cfc6.chunk.js.LICENSE.txt",
+    "static/media/instagram.87437c11.png": "/static/media/instagram.87437c11.png",
+    "static/media/whatsapp.faad3d43.jpg": "/static/media/whatsapp.faad3d43.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ba698672.js",
+    "static/js/runtime-main.08716053.js",
     "static/js/2.0c05cfc6.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
     "static/js/main.434d9bf6.chunk.js"
