@@ -30,7 +30,7 @@ export const WelcomePage = (props: WelcomePageType) => {
                     <Grid container>*/}
                         <Grid item>
                             {/*https://www.youtube.com/watch?v=1rKa7l_iASI deeplink information*/}
-                            <a href={'https://urlgeni.us/instagram/z7RW'} target={"_blank"}><img
+                            <a href={'https://urlgeni.us/instagram/z7RW'} target={"_blank"} rel="noreferrer"><img
                                 src={instagram}
                                 alt={'Instagram'} style={{width: '150px'}}/></a>
                         </Grid>
