@@ -15,6 +15,7 @@ export type ValueType = {
 }
 
 export const CategoryList = (props: CategoryListPropsType) => {
+    console.log("CategoryList")
     const specialProductsItems = props.store.items.filter(f => f.category === props.category)
     const [buttonsValue, setButtonsValue] = useState<ValueType[]>([
             {id: 372, valueAction: true, valueIngredients: false, valueApply: false}, {
@@ -62,6 +63,7 @@ export const CategoryList = (props: CategoryListPropsType) => {
     return (
         <Grid container justifyContent={'center'} spacing={1}>
             {specialProductsItems.map(m => {
+                console.log("Item")
                 return (
                     <Grid item key={m.id}>
                         <Paper elevation={6} style={{padding: '15px', width: '85vw'}}>

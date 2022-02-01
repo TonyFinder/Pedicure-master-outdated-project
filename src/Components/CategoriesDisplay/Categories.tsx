@@ -1,14 +1,15 @@
 import React, {useState} from 'react';
-import {CategoriesType, DescriptionItemsType, ItemsType} from '../../Store/Store';
+import {StoreType} from '../../Store/Store';
 import {CategoryList} from './CategoryList/CategoryList';
 import {AppBar, Button, ButtonGroup, Container, Grid, Toolbar, Typography} from '@material-ui/core';
 
 type CategoriesPropsType = {
-    store: DescriptionItemsType & ItemsType & CategoriesType
+    store: StoreType
     callbackWelcome: () => void
 }
 
 export const Categories = (props: CategoriesPropsType) => {
+    console.log("Categories")
     const [menu, setMenu] = useState<boolean>(true)
     const [category, setCategory] = useState<string>('Сухая кожа стопы')
     const onClickHandler = (category: string) => {

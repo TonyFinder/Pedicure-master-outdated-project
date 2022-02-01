@@ -27,7 +27,17 @@ export type CategoryType = {
     id: number
     category: string
 }
-export type StoreType = DescriptionItemsType & ItemsType & CategoriesType
+export type PriceListType = {
+    priceList: PriceType[]
+}
+export type PriceType = {
+    item: string
+    price: number
+}
+export type PriceIncludeType = {
+    priceInclude: string[]
+}
+export type StoreType = DescriptionItemsType & ItemsType & CategoriesType & PriceListType & PriceIncludeType
 
 export const store: StoreType = {
     description: [{
@@ -230,5 +240,16 @@ export const store: StoreType = {
         {id: 1, category: 'Сухая кожа'},
         {id: 2, category: 'Избыточное потоотдение и неприятный запах'},
         {id: 3, category: 'Специальные продукты'}
-    ]
+    ],
+    priceList: [{
+        item: 'Обработка стопы и пальчиков с покрытием гель-лак',
+        price: 3000
+    }, {
+        item: 'Обработка пальчиков с покрытием гель-лак',
+        price: 2500
+    }, {
+        item: 'Обработка  стопы и пальчиков без покрытия',
+        price: 2200
+    }, {item: 'Обработка пальчиков или стопы  без покрытия', price: 1600},],
+    priceInclude: ['снятие любого покрытия','тампонирование (при необходимости)','покрытие лечебным лаком','экспресс дизайн на 2х ногтях',],
 }

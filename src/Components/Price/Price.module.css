@@ -1,0 +1,61 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: darkblue;
+    /*border: 1px solid blue;*/
+}
+.underHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border: 1px solid orange;*/
+}
+.prices {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 20px 0px;
+    /*border: 1px solid red;*/
+}
+.priceItemAll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border: 1px solid black;*/
+}
+.itemName {
+    text-align: center;
+    font-style: italic;
+    /*border: 1px solid red;*/
+}
+.itemPrice {
+    font-weight: bold;
+    margin-top: 5px;
+    /*border: 1px solid saddlebrown;*/
+}
+.line {
+    height: 1px;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid darkblue;
+    border-bottom-style: dotted;
+}
+h2 {
+    margin: 15px 0 0 0;
+    /*border: 1px solid blueviolet;*/
+}
+.priceIncludeSigh {
+    font-weight: bold;
+}
+li {
+    list-style-type: none;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+ul li:before {
+    content: '✓';
+    font-weight: bold;
+    margin-right: 5px;
+}
