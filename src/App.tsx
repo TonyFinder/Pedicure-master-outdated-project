@@ -15,8 +15,16 @@ function App() {
         showGoods(false)
     }
     const callbackPageShow = (value: string) => {
-        showWelcome(false)
-        value === "price" ? showPrice(true) : showGoods(true)
+        if (value === "price") {
+            showWelcome(false)
+            showPrice(true)
+            showGoods(false)
+        }
+        if (value === "goods") {
+            showWelcome(false)
+            showPrice(false)
+            showGoods(true)
+        }
     }
 
     return (
