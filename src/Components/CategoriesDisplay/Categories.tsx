@@ -34,7 +34,7 @@ export const Categories = (props: CategoriesPropsType) => {
                         </AppBar>
                         <Container maxWidth={'md'} style={ {minHeight: "80vh"} }>
                             <Grid container>
-                                <Grid container justifyContent={'center'} style={{margin: '30px 0px'}}>
+                                <Grid container justifyContent={'center'} style={{margin: '30px 0px 15px 0px'}}>
                                     <Typography align={'center'} variant="h6"
                                                 style={{fontFamily: 'cursive', fontWeight: 'bolder'}}>Выберите
                                         категорию:</Typography>

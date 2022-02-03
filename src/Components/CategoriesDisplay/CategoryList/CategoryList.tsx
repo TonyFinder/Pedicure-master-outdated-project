@@ -61,7 +61,7 @@ export const CategoryList = (props: CategoryListPropsType) => {
     }
 
     return (
-        <Grid container justifyContent={'center'} spacing={1}>
+        <Grid container justifyContent={'center'} spacing={1} style={ {marginTop: "10px"} }>
             {specialProductsItems.map(m => {
                 console.log("Item")
                 return (
