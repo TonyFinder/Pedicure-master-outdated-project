@@ -3,9 +3,10 @@ import {Categories} from './Components/CategoriesDisplay/Categories';
 import {store} from './Store/Store';
 import {WelcomePage} from './Components/WelcomePage/WelcomePage';
 import {Price} from './Components/Price/Price';
+import {AppBar, Typography} from '@material-ui/core';
 
 function App() {
-    console.log("APP")
+    console.log('APP')
     const [welcome, showWelcome] = useState(true)
     const [price, showPrice] = useState(false)
     const [goods, showGoods] = useState(false)
@@ -15,12 +16,12 @@ function App() {
         showGoods(false)
     }
     const callbackPageShow = (value: string) => {
-        if (value === "price") {
+        if (value === 'price') {
             showWelcome(false)
             showPrice(true)
             showGoods(false)
         }
-        if (value === "goods") {
+        if (value === 'goods') {
             showWelcome(false)
             showPrice(false)
             showGoods(true)
@@ -28,12 +29,20 @@ function App() {
     }
 
     return (
-    <div>
-        {welcome && <WelcomePage callbackButton={callbackPageShow}/>}
-        {goods && <Categories store={store} callbackWelcome={callbackButton}/>}
-        {price && <Price callbackWelcome={callbackButton}/>}
-    </div>
-  );
+        <div>
+            <div style={{minHeight: '100vh', border: '1px solid black'}}>
+                {welcome && <WelcomePage callbackButton={callbackPageShow}/>}
+                {goods && <Categories store={store} callbackWelcome={callbackButton}/>}
+                {price && <Price callbackWelcome={callbackButton}/>}
+            </div>
+            <AppBar position={'static'} style={{height: '30px', display: "flex", alignItems: "center", justifyContent: "center"}}>
+                <div>
+                    <Typography align={'center'} variant="inherit"
+                                style={{fontFamily: 'cursive'}}>Pedicure.cabinet</Typography>
+                </div>
+            </AppBar>
+        </div>
+    );
 }
 
 export default App;

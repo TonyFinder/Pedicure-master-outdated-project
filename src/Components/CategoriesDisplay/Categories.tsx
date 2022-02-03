@@ -21,7 +21,7 @@ export const Categories = (props: CategoriesPropsType) => {
         <div>
             {menu ?
                 (
-                    <div>
+                    <div style={ {minHeight: "100vh"} }>
                         <AppBar position={'sticky'}>
                             <Toolbar>
                                 <Grid container justifyContent={'center'} alignItems={'center'}>
@@ -32,14 +32,14 @@ export const Categories = (props: CategoriesPropsType) => {
                                 </Grid>
                             </Toolbar>
                         </AppBar>
-                        <Container maxWidth={'md'}>
+                        <Container maxWidth={'md'} style={ {minHeight: "80vh"} }>
                             <Grid container>
-                                <Grid container justifyContent={'center'} style={{margin: '10px 0px'}}>
+                                <Grid container justifyContent={'center'} style={{margin: '30px 0px'}}>
                                     <Typography align={'center'} variant="h6"
                                                 style={{fontFamily: 'cursive', fontWeight: 'bolder'}}>Выберите
                                         категорию:</Typography>
                                 </Grid>
-                                <Grid container justifyContent={'center'}>
+                                <Grid container justifyContent={'center'} style={{marginBottom: '50px'}}>
                                     <ButtonGroup color={'primary'} orientation={'vertical'}
                                                  aria-label={'vertical outlined button group'} variant={'text'}>
                                         {props.store.categories.map(category =>
@@ -48,7 +48,7 @@ export const Categories = (props: CategoriesPropsType) => {
                                         )}
                                     </ButtonGroup>
                                 </Grid>
-                                <Grid container justifyContent={'center'}>
+                                <Grid container justifyContent={'center'} >
                                     <img alt={'backgroundImage'} style={{opacity: '0.3'}}
                                          src={'https://live.staticflickr.com/65535/51706322654_f53b3c9628_n.jpg'}/>
                                 </Grid>

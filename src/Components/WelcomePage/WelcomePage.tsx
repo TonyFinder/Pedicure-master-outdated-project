@@ -25,7 +25,7 @@ export const WelcomePage = (props: WelcomePageType) => {
             </AppBar>
             <Grid container justifyContent={'center'} alignItems={'center'} direction={'column'}>
                 <Button onClick={() => props.callbackButton("price")} variant={'outlined'} color={'primary'} size={'large'}
-                        style={{marginTop: '25px', marginBottom: '10px'}}>Мой прайс
+                        style={{marginTop: '35px', marginBottom: '10px'}}>Мой прайс
                 </Button>
                 <Button onClick={() => props.callbackButton("goods")} variant={'outlined'} color={'primary'} size={'large'}
                         style={{marginBottom: '25px'}}>Средства для ухода в наличии

@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     color: darkblue;
+    margin-top: 15px;
     /*border: 1px solid blue;*/
 }
 .underHeader {
