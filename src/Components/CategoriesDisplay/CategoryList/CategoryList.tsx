@@ -72,18 +72,18 @@ export const CategoryList = (props: CategoryListPropsType) => {
                                     <h3 style={{margin: '0px'}}>
                                         {m.name}
                                     </h3>
-                                    <span style={{fontStyle: 'italic', fontSize: '15px'}}>Объём {m.volume} мл.</span>
+                                    <span style={{fontStyle: 'italic', fontSize: '15px'}}><b>Цена - {m.priceRegular} руб.</b> (Объём {m.volume} мл.)</span>
                                 </Grid>
                                 <Grid item style={{margin: '10px 0px'}}>
                                     <img src={props.store.description.find(f => f.id === m.id)?.picture}
                                          alt={'Изображение'} style={{height: '250px'}}/>
                                 </Grid>
-                                <Grid item>
+                                {/*<Grid item>
                                     <div>Цена - <b>{m.priceRegular} руб.</b></div>
                                     <div>В день процедуры - <b>{m.priceDiscounted} руб.</b></div>
-                                </Grid>
+                                </Grid>*/}
                             </Grid>
-                            <Grid container style={{paddingTop: '25px'}}>
+                            <Grid container style={{paddingTop: '10px'}}>
                                 <Grid container justifyContent={'center'}>
                                     <ButtonGroup size="small" color={'primary'}>
                                         <Button

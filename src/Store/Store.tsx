@@ -160,17 +160,17 @@ export const store: StoreType = {
         category: 'Сухая кожа',
         name: 'Бальзам. Идеальная гладкость',
         volume: 75,
-        priceRegular: 1150,
-        priceDiscounted: 950,
-        discount: '17%'
+        priceRegular: 1200,
+        priceDiscounted: 1000,
+        discount: '16%'
     }, {
         id: 991312,
         category: 'Сухая кожа',
         name: 'Бальзам. Идеальная гладкость',
         volume: 150,
-        priceRegular: 2150,
-        priceDiscounted: 1800,
-        discount: '16%'
+        priceRegular: 2250,
+        priceDiscounted: 1850,
+        discount: '17%'
     }, {
         id: 889,
         category: 'Избыточное потоотдение и неприятный запах',
@@ -251,5 +251,5 @@ export const store: StoreType = {
         item: 'Обработка  стопы и пальчиков без покрытия',
         price: 2200
     }, {item: 'Обработка пальчиков или стопы  без покрытия', price: 1600},],
-    priceInclude: ['снятие любого покрытия','тампонирование (при необходимости)','покрытие лечебным лаком','экспресс дизайн на 2х ногтях',],
+    priceInclude: ['снятие любого покрытия', 'тампонирование (при необходимости)', 'покрытие лечебным лаком', 'экспресс дизайн на 2х ногтях',],
 }
