@@ -34,7 +34,7 @@ export const Price = (props: PricePropsType) => {
                     <ul>
                         {store.priceInclude.map(m => <li>{m}</li>)}
                     </ul>
-                    <div className={style.priceIncludeSigh}>Сложный дизайн оплачивается отдельно!</div>
+                    <div className={style.priceIncludeSigh}>Дизайн оплачивается отдельно!</div>
                 </div>
             </div>
         </div>
