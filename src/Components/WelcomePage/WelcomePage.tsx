@@ -1,8 +1,14 @@
-import {AppBar, Button, Grid, Toolbar, Typography} from '@material-ui/core';
 import React from 'react';
-import {FavoriteTwoTone} from '@material-ui/icons';
 import whatsapp from '../../pictures/whatsapp1.svg'
 import instagram from '../../pictures/InstagramSignColor.png'
+import AppBar from '@material-ui/core/AppBar';
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import FavoriteTwoTone from '@material-ui/icons/FavoriteTwoTone';
+import {NavLink} from 'react-router-dom';
+
 
 export type WelcomePageType = {
     callbackButton: (value: string) => void
@@ -24,14 +30,18 @@ export const WelcomePage = (props: WelcomePageType) => {
                 </Toolbar>
             </AppBar>
             <Grid container justifyContent={'center'} alignItems={'center'} direction={'column'}>
-                <Button onClick={() => props.callbackButton('price')} variant={'outlined'} color={'primary'}
-                        size={'large'}
-                        style={{marginTop: '35px', marginBottom: '10px'}}>Мой прайс
-                </Button>
-                <Button onClick={() => props.callbackButton('goods')} variant={'outlined'} color={'primary'}
-                        size={'large'}
-                        style={{marginBottom: '40px'}}>Средства для ухода в наличии
-                </Button>
+                <NavLink to='/price' style={{textDecoration: "none"}}>
+                    <Button onClick={() => props.callbackButton('price')} variant={'outlined'} color={'primary'}
+                            size={'large'}
+                            style={{marginTop: '35px', marginBottom: '10px'}}>Мой прайс
+                    </Button>
+                </NavLink>
+                <NavLink to='/categories' style={{textDecoration: "none"}}>
+                    <Button onClick={() => props.callbackButton('goods')} variant={'outlined'} color={'primary'}
+                            size={'large'}
+                            style={{marginBottom: '40px'}}>Средства для ухода в наличии
+                    </Button>
+                </NavLink>
                 {/*<Grid item>*/}
                 {/*    <Grid container>*/}
                         <Grid item>

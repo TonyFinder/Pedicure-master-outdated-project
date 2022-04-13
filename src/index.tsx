@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {App} from './Components/App/App';
+import {HashRouter} from 'react-router-dom';
+import {ScrollToTop} from './utils/ScrollUp';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <HashRouter>
+          <ScrollToTop/>
+          <App/>
+      </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

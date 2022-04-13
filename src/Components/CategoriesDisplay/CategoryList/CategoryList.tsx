@@ -1,7 +1,11 @@
 import React, {useState} from 'react';
 import {v1} from 'uuid';
 import {StoreType} from '../../../Store/Store';
-import {Button, ButtonGroup, Grid, Paper} from '@material-ui/core';
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
+import ButtonGroup from '@material-ui/core/ButtonGroup';
+import Paper from '@material-ui/core/Paper';
+
 
 export type CategoryListPropsType = {
     store: StoreType

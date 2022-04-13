@@ -3,10 +3,11 @@ import {Categories} from './Components/CategoriesDisplay/Categories';
 import {store} from './Store/Store';
 import {WelcomePage} from './Components/WelcomePage/WelcomePage';
 import {Price} from './Components/Price/Price';
-import {AppBar, Typography} from '@material-ui/core';
+import Typography from '@material-ui/core/Typography';
+import AppBar from '@material-ui/core/AppBar';
 
-function App() {
-    console.log('APP')
+function AppOld() {
+    console.log('APPOld')
     const [welcome, showWelcome] = useState(true)
     const [price, showPrice] = useState(false)
     const [goods, showGoods] = useState(false)
@@ -45,4 +46,4 @@ function App() {
     );
 }
 
-export default App;
+export default AppOld;
