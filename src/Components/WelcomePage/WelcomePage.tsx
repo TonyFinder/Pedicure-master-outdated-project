@@ -58,9 +58,9 @@ export const WelcomePage = (props: WelcomePageType) => {
                                 src={whatsapp}
                                 alt={'WhatsApp'} style={{width: '150px'}}/></a>
                         </Grid>
-                <Grid item>
-                    <div style={{width: "80px", height: "2px", background: "#3f51b5", margin: "15px 0"}}></div>
-                </Grid>
+                {/*<Grid item>*/}
+                {/*    <div style={{width: "80px", height: "2px", background: "#3f51b5", margin: "15px 0"}}></div>*/}
+                {/*</Grid>*/}
                 {/*    </Grid>*/}
                 {/*</Grid>*/}
             </Grid>
