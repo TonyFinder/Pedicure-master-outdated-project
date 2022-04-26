@@ -9,7 +9,6 @@ import ButtonGroup from '@material-ui/core/ButtonGroup';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 
-
 type CategoriesPropsType = {
     store: StoreType
     callbackWelcome?: () => void
@@ -81,7 +80,7 @@ export const Categories = (props: CategoriesPropsType) => {
                         </Toolbar>
                     </AppBar>
                     <Container maxWidth={'md'}>
-                        <CategoryList store={props.store} category={category}/>
+                            <CategoryList store={props.store} category={category}/>
                     </Container>
                 </div>
             }
