@@ -33,11 +33,12 @@ export const Price = (props: PricePropsType) => {
                             <div className={style.line}></div>
                         </div>)}
                     </div>
-                    <div className={style.priceIncludeSigh}>В стоимость включено:</div>
-                    <ul>
+                    {/*<div className={style.priceIncludeSigh}>В стоимость включено:</div>*/}
+                    {/*<ul>
                         {store.priceInclude.map(m => <li>{m}</li>)}
-                    </ul>
-                    <div className={style.priceIncludeSigh}>Дизайн оплачивается отдельно!</div>
+                    </ul>*/}
+                    <div className={style.priceIncludeSigh}><sup>*</sup>Дизайн оплачивается отдельно</div>
+                    <div className={style.priceIncludeSigh}><sup>**</sup>Снятие покрытия от другого мастера - 200 рублей</div>
                 </div>
             </div>
         </div>
