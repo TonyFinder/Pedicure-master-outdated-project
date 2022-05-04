@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c036f7f.chunk.css",
-    "main.js": "/static/js/main.fd38d0db.chunk.js",
-    "main.js.map": "/static/js/main.fd38d0db.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.42d4a8c6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.42d4a8c6.js.map",
-    "static/js/2.f3687b8b.chunk.js": "/static/js/2.f3687b8b.chunk.js",
-    "static/js/2.f3687b8b.chunk.js.map": "/static/js/2.f3687b8b.chunk.js.map",
-    "static/js/3.be1d1f4e.chunk.js": "/static/js/3.be1d1f4e.chunk.js",
-    "static/js/3.be1d1f4e.chunk.js.map": "/static/js/3.be1d1f4e.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.6c036f7f.chunk.css.map": "/static/css/main.6c036f7f.chunk.css.map",
-    "static/js/2.f3687b8b.chunk.js.LICENSE.txt": "/static/js/2.f3687b8b.chunk.js.LICENSE.txt",
-    "static/media/instagram.87437c11.png": "/static/media/instagram.87437c11.png",
-    "static/media/whatsapp.faad3d43.jpg": "/static/media/whatsapp.faad3d43.jpg"
+    "main.css": "/Pedicure_Goods_1st_Version/static/css/main.6c036f7f.chunk.css",
+    "main.js": "/Pedicure_Goods_1st_Version/static/js/main.fd38d0db.chunk.js",
+    "main.js.map": "/Pedicure_Goods_1st_Version/static/js/main.fd38d0db.chunk.js.map",
+    "runtime-main.js": "/Pedicure_Goods_1st_Version/static/js/runtime-main.eacafb01.js",
+    "runtime-main.js.map": "/Pedicure_Goods_1st_Version/static/js/runtime-main.eacafb01.js.map",
+    "static/js/2.f3687b8b.chunk.js": "/Pedicure_Goods_1st_Version/static/js/2.f3687b8b.chunk.js",
+    "static/js/2.f3687b8b.chunk.js.map": "/Pedicure_Goods_1st_Version/static/js/2.f3687b8b.chunk.js.map",
+    "static/js/3.be1d1f4e.chunk.js": "/Pedicure_Goods_1st_Version/static/js/3.be1d1f4e.chunk.js",
+    "static/js/3.be1d1f4e.chunk.js.map": "/Pedicure_Goods_1st_Version/static/js/3.be1d1f4e.chunk.js.map",
+    "index.html": "/Pedicure_Goods_1st_Version/index.html",
+    "static/css/main.6c036f7f.chunk.css.map": "/Pedicure_Goods_1st_Version/static/css/main.6c036f7f.chunk.css.map",
+    "static/js/2.f3687b8b.chunk.js.LICENSE.txt": "/Pedicure_Goods_1st_Version/static/js/2.f3687b8b.chunk.js.LICENSE.txt",
+    "static/media/instagram.87437c11.png": "/Pedicure_Goods_1st_Version/static/media/instagram.87437c11.png",
+    "static/media/whatsapp.faad3d43.jpg": "/Pedicure_Goods_1st_Version/static/media/whatsapp.faad3d43.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.42d4a8c6.js",
+    "static/js/runtime-main.eacafb01.js",
     "static/js/2.f3687b8b.chunk.js",
     "static/css/main.6c036f7f.chunk.css",
     "static/js/main.fd38d0db.chunk.js"
